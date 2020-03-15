@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from cycler import cycler
+from matplotlib.ticker import AutoMinorLocator
+
 # OPTIONS -----------------------
 # font.family        : serif
 # font.serif         : Times, Palatino, New Century Schoolbook, Bookman, Computer Modern Roman
@@ -58,6 +60,8 @@ plt.setp(ax1.get_xticklabels(), visible=False)
 ax1.set_ylabel(r'$y$ [m]', fontsize=fontSizeLabel, labelpad=labelPadY)
 ax1.grid(axis='x', color=graylist[5], lw=0.5, ls='--')
 ax1.grid(axis='y', color=graylist[5], lw=0.5, ls='--')
+ax1.xaxis.set_minor_locator(AutoMinorLocator())  # minor ticks
+ax1.yaxis.set_minor_locator(AutoMinorLocator())
 ax1.legend()
 # Create another plot without a tex title
 ax2 = fig.add_subplot(212)
@@ -67,6 +71,8 @@ ax2.set_xlabel(r'$x$ [ - ]', fontsize=fontSizeLabel, labelpad=labelPadX)
 ax2.set_ylabel(r'$y$ [m]', fontsize=fontSizeLabel, labelpad=labelPadX)
 ax2.grid(axis='x', color=graylist[5], lw=0.5, ls='--')
 ax2.grid(axis='y', color=graylist[5], lw=0.5, ls='--')
+ax2.xaxis.set_minor_locator(AutoMinorLocator())  # minor ticks
+ax2.yaxis.set_minor_locator(AutoMinorLocator())
 ax2.legend()
 
 plt.show()
