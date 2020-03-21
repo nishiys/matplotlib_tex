@@ -2,6 +2,10 @@
 
 Professional graph with LaTeX rendering in Matplotlib as an alternative of gnuplot. 
 
+## For TeX
+.pdf or .svg format should be used.
+.svg is easier to use on websites but as long as you want to create documants with vector images there is little difference between them.
+
 
 ## For Office product
 Office products automatically convert vector style images to raster images.
