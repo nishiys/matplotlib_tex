@@ -75,4 +75,8 @@ ax2.xaxis.set_minor_locator(AutoMinorLocator())  # minor ticks
 ax2.yaxis.set_minor_locator(AutoMinorLocator())
 ax2.legend()
 
+# plt.savefig("img_pdf.pdf") # Note: dpi setting doesn't make sense to vector formats
+# plt.savefig("img_svg.svg") 
+# plt.savefig("img_png.png", dpi=300)
+
 plt.show()
