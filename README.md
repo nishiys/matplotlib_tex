@@ -29,4 +29,5 @@ inkscape img.svg -M img.emf
 - [ImageMagick \- Command\-line Tools](https://imagemagick.org/script/command-line-tools.php)
 
 imagemagick only supports .emf on Windows.
+
 NOTE: Old commands like "convert" are already replaced by "magick convert". These are currently just symbolic links to "magick ..." commands. 
